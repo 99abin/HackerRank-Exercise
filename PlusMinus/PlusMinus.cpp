@@ -8,13 +8,9 @@ void plusMinus(vector<int> arr) {
     float pos = 0, neg = 0, zer = 0; // Initialize counters for positive, negative, and zero elements
     // Loop through each element in the vector
     for (int i = 0; i < arr.size(); i++) {
-        if (arr[i] > 0) { // Check if the element is positive
-            pos++; // Increment the positive counter
-        } else if (arr[i] == 0) { // Check if the element is zero
-            zer++; // Increment the zero counter
-        } else { // The element is negative
-            neg++; // Increment the negative counter
-        }
+        pos += arr[i] > 0; // Increment the positive counter if the element is positive
+        neg += arr[i] < 0; // Increment the negative counter if the element is negative
+        zer += arr[i] == 0; // Increment the zero counter if the element is zero
     }
     // Print the ratio of positive numbers to the total number of elements
     cout << pos/arr.size() << endl;
