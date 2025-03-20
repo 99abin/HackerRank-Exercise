@@ -33,4 +33,6 @@ int main() {
         cout << angryProfessor(stud, list) << "\n"; // Call the function and print the result
         list.clear(); // Clear the list for the next test case
     }
+
+    return 0;
 }
