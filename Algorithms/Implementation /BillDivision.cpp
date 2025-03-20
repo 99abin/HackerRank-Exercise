@@ -38,4 +38,6 @@ int main() {
 
    // Call the function to check if the charge was correct
    bonAppetit(inp, k, a);
+
+   return 0;
 }
